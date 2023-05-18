@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .up {
+            height: 50px;
+            width: 200px;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        }
+
+        .up::after {
+            display: block;
+            content: "";
+            height: 10px;
+            width: 10px;
+            border-bottom: 2px solid blue;
+            border-right: 2px solid blue;
+            transform: rotate(45deg);
+            position: absolute;
+            top:30% ;
+            left: 60%;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="up">123</div>
+</body>
+
+</html>

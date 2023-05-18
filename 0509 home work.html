@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .container {
+            height: 500px;
+            width: 300px;
+            border: 2px solid gray;
+            border-radius: 20px;
+            position: absolute;
+            top: 80px;
+            left: 500px;
+            background-color: white;
+            box-shadow: 8px 8px 5px rgb(165, 165, 165);
+        }
+
+        .picture-box {
+            height: 110px;
+            width: 250px;
+            border: 0px solid red;
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        .circle {
+            height: 140px;
+            width: 140px;
+            border-radius: 70px;
+            border: 1.5px solid gray;
+            position: absolute;
+            top: 40px;
+            left: 55px;
+            z-index: 5;
+            overflow: hidden;
+            box-shadow: 2px 2px 3px rgb(165, 165, 165);
+        }
+
+        .pai {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .modle-1 {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+        }
+
+        .modle-2 {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+        }
+
+        div.container:hover .modle-2 {
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .text1 {
+            font-family: 'Cabin';
+            font-weight: 400;
+            font-size: 32px;
+            position: absolute;
+            top: 185px;
+            left: 80px;
+        }
+
+        .line{
+            background: gray;
+            width:80%;
+            height: 1.5px;
+            position: absolute;
+            top: 225px;
+            left: 25px;
+        }
+
+        .text2 {
+            font-family: 'arial';
+            font-weight: 200;
+            font-size: 18px;
+            position: absolute;
+            top: 240px;
+            left: 50px;
+
+        }
+
+        .button {
+            background:linear-gradient(rgb(238, 54, 54), rgb(151, 42, 9) 90%);
+            height: 40px;
+            width: 200px;
+            position: absolute;
+            bottom: 30px;
+            left: 25px;
+            border-radius: 10px;
+        }
+
+        .button-text {
+            font-family: 'arial';
+            font-weight: 200;
+            font-size: 24px;
+            position: absolute;
+            bottom: 8px;
+            text-align: center;
+            left: 45px;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="circle">
+            <img class="pai" src="imgs/paipai.jpg" alt="erro">
+        </div>
+        <div class="text1">
+            <p>Pai Pai</p>
+        </div>
+        <div class="line"></div>
+        <div class="button">
+            <p class="button-text">Follow me</p>
+        </div>
+
+        <div class="text2">
+            <p>pai pai love modle</p>
+        </div>
+        <div class="picture-box">
+            <img class="modle-1" src="imgs/modle-1.jpg" alt="erro">
+            <img class="modle-2" src="imgs/modle-2.jpg" alt="erro">
+        </div>
+
+    </div>
+</body>
+
+</html>

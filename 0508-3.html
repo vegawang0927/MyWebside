@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        *{
+            outline: 1px solid red;
+        }
+        div.picture-box {
+            height: 500px;
+            width: 700px;
+            position: relative;
+        }
+
+        div.picture-box:hover .test{
+            opacity: 1;
+        }
+
+        div.picture-box:hover img{
+            opacity: 0.5;
+        }
+
+        .picture-box>img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .test{
+            position: absolute;
+            height: 50px;   
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            /* transform: translate(40%, 75%); */
+            z-index: 10;
+            background-color: black;
+            color: aliceblue;
+            line-height: 50px;
+            text-align: center;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="picture-box">
+        <img src="./imgs/1682345595525.jpg" alt="123">
+        <p class="test">123456</p>
+    </div>
+</body>
+
+</html>

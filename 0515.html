@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            background-color: brown;
+            animation: pinpon 2s ease-in-out 3 alternate forwards;
+            /* animation-name: pinpon; */
+            /* animation-duration: 2s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function:ease-in-out;
+            animation-fill-mode: forwards; */
+
+        }
+
+        @keyframes pinpon {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(200px,150px);
+            }
+            100% {
+                transform: translate(300px,0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+
+    </div>
+</body>
+
+</html>

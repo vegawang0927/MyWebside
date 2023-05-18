@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: lightpink;
+            width: 300px;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            transition: .5s;
+        }
+
+        .container:hover .transformX {
+            transform: translateX(30px);
+
+        }
+
+        .container:hover .transformY {
+            transform: translateY(30px);
+            opacity: 0.5
+        }
+
+        .container:hover .transformX {
+            transform: translateX(30px);
+
+        }
+
+        .container:hover .transformX {
+            transform: translateX(30px);
+
+        }
+
+        /* .transformX:hover {
+            transform: translateX(3px);
+        } */
+
+        .transformY:hover {
+            transform: translateY(3px)
+        }
+
+        .scale:hover {
+            transform: scale(1.2);
+            background-color: brown;
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg)
+        }
+
+        .skew:hover {
+            transform: skew(45deg)
+        }
+
+        .box-6:hover {
+            transform: translate(300px) scale(0.7) rotate(-135deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box transformX"></div>
+        <div class="box transformY"></div>
+        <div class="box scale"></div>
+        <div class="box rotate"></div>
+        <div class="box skew"></div>
+        <div class="box box-6"></div>
+    </div>
+</body>
+
+</html>
